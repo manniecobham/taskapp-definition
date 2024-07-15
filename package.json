@@ -1,0 +1,21 @@
+{
+  "name": "@taskmanagement/taskapp-definition",
+  "version": "0.1.0",
+  "description": "Definition for Task management app backend",
+  "main": "./dist",
+  "types": "./dist",
+  "author": "Emmanuel Cobham",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -watch"
+  },
+  "homepage": "https://github.com/manniecobham/taskapp-model#readme",
+  "dependencies": {
+    "@taskmanagement/taskapp-model": "^1.3.9",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  }
+}
