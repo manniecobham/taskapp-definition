@@ -1,13 +1,13 @@
 {
-  "name": "@taskmanagement/taskapp-definition",
-  "version": "0.1.0",
-  "description": "Definition for Task management app backend",
+  "name": "@taskmanagement/taskapp-tbldef",
+  "version": "0.0.1",
+  "description": "Table Definition for Task management app backend",
   "main": "./dist",
   "types": "./dist",
   "author": "Emmanuel Cobham",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No test specified\" && exit 1",
     "prepublishOnly": "npm run build",
     "build": "tsc",
     "watch": "tsc -watch"
