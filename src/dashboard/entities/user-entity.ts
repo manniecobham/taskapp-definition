@@ -1,4 +1,4 @@
-import { User, tablePrefix } from "@taskmanagement/taskapp-model";
+import { EnumRoles, User, tablePrefix } from "@taskmanagement/taskapp-model";
 import { EntitySchema } from "typeorm";
 
 const tableName = tablePrefix + "user";
@@ -34,9 +34,16 @@ export const userEntity = new EntitySchema<User>({
       nullable: true,
     },
     roles: {
-      type: String,
+      type: Number,
       array: true,
       nullable: true,
+      enum: true,
+    },
+    permissions: {
+      array: true,
+      enum: true,
+      type: Number,
+      nullable: true
     },
     createdAt: {
       type: Date,
