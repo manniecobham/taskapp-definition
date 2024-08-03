@@ -42,7 +42,7 @@ export const userEntity = new EntitySchema<User>({
     permissions: {
       array: true,
       enum: true,
-      type: Number,
+      type: String,
       nullable: true
     },
     createdAt: {

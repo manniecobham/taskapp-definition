@@ -1,6 +1,6 @@
 {
   "name": "@taskmanagement/taskapp-tbldef",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Table Definition for Task management app backend",
   "main": "./dist",
   "types": "./dist",
